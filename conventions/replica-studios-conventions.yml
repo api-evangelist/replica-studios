@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.replicastudios.com/
+docs: https://docs.replicastudios.com/api-reference
+notes: >-
+  Cross-cutting request/response semantics captured from the archived Replica
+  API v2 documentation. Replica Studios ceased operations 2025-06-30; recorded
+  here for historical/discovery value. Only conventions the docs actually state
+  are recorded — no idempotency, pagination, or rate-limit signaling contract
+  was documented in the sources found, so those are left null rather than
+  invented.
+authentication:
+  styles: [api-key-header, bearer-jwt]
+  token_exchange: POST /v2/auth (client_id + secret -> JWT + refresh token)
+  ref: authentication/replica-studios-authentication.yml
+versioning:
+  scheme: uri-path
+  current: v2
+  example_path_prefix: /v2/
+  docs: https://docs.replicastudios.com/api-reference
+idempotency: null
+pagination: null
+rate_limit_signaling: null
+error_envelope: null

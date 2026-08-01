@@ -1,0 +1,40 @@
+# Replica Studios
+
+> Replica Studios (Replica Media Pty Ltd) built AI voice, text-to-speech (TTS)
+> and speech-to-speech (STS) technology for creators and game developers — an
+> AI Voice Library of 40+ expressive voices, Voice Lab (blend up to 5 voices),
+> and Voice Director, exposed to developers through the Replica API (v2). The
+> company ceased operations on 2025-06-30; the marketing site now shows a
+> farewell page and api.replicastudios.com no longer resolves. This llms.txt is
+> a historical/discovery profile generated from the API Evangelist catalog.
+
+## Status
+- Company: Replica Studios / Replica Media Pty Ltd
+- Operating status: sunset — ceased operations 2025-06-30
+- API: Replica API v2 (OpenAPI 3.0.0), REST over HTTPS
+- Historical base URL: https://api.replicastudios.com (paths under /v2/)
+
+## Capabilities (documented)
+- Text-to-speech (TTS) generation
+- Speech-to-speech (STS) generation
+- Voice library listing / retrieval
+- Emotive / expressive voice performances, voice blends (Voice Lab)
+
+## Authentication
+- API Key (header) — quick integration
+- Bearer JWT via POST /v2/auth (Personal Access Token client_id + secret -> JWT + refresh token)
+- See: authentication/replica-studios-authentication.yml
+
+## Docs
+- Website (farewell): https://replicastudios.com/
+- API documentation: https://docs.replicastudios.com/
+- API reference: https://docs.replicastudios.com/api-reference
+- Authentication guide: https://docs.replicastudios.com/guide/authentication
+- Legacy docs: https://docs-legacy.replicastudios.com/
+- Support / help center: https://help.replicastudios.com/
+
+## Repo artifacts
+- apis.yml: https://raw.githubusercontent.com/api-evangelist/replica-studios/refs/heads/main/apis.yml
+- Authentication: authentication/replica-studios-authentication.yml
+- Conventions: conventions/replica-studios-conventions.yml
+- Domain security probe: security/replica-studios-domain-security.yml

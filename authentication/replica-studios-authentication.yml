@@ -1,0 +1,33 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.replicastudios.com/guide/authentication
+docs: https://docs.replicastudios.com/guide/authentication
+notes: >-
+  Replica Studios ceased operations on 2025-06-30; api.replicastudios.com no
+  longer resolves. This profile captures the historical, publicly documented
+  authentication model from the archived Replica API v2 documentation. No
+  OpenAPI could be captured (docs host rejects non-browser TLS), so exact
+  header/parameter names are recorded only where the docs state them.
+summary:
+  types: [apiKey, http]
+  api_key_in: [header]
+  http_schemes: [bearer]
+schemes:
+  - name: apiKey
+    type: apiKey
+    in: header
+    description: >-
+      API Key auth. Documented as the quick/simple integration method, usable to
+      generate text-to-speech, speech-to-speech, and to retrieve the voice list.
+      Personal Access Tokens are created from Account settings in the Replica
+      desktop application (subscription with API access required).
+  - name: bearerJWT
+    type: http
+    scheme: bearer
+    bearerFormat: JWT
+    description: >-
+      Bearer token (JWT) auth, sent as the `Authorization: Bearer <jwt>` header.
+      A Personal Access Token client_id and secret are exchanged at the
+      POST /v2/auth endpoint to mint a short-lived JWT plus a refresh token.
+      Documented as the more secure/powerful option.
+    token_endpoint: /v2/auth

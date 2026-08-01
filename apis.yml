@@ -1,7 +1,30 @@
 aid: replica-studios
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/replica-studios.png
 name: Replica Studios
-description: Replica Studios is a company surfaced as a portfolio company of techstars and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Replica Studios (operated by Replica Media Pty Ltd) built AI voice, text-to-speech
+  (TTS) and speech-to-speech (STS) technology for creators, game developers, and
+  software teams. Its platform offered an AI Voice Library of 40+ expressive voices,
+  Voice Lab for blending up to five voices into a custom character, and Voice Director
+  for generating voice overs and dialogue. Developers integrated these capabilities
+  through the Replica API v2 (OpenAPI 3.0.0) — a REST API supporting text-to-speech,
+  speech-to-speech, and voice-listing operations, authenticated with API keys or
+  Bearer JWTs minted at the /v2/auth endpoint. Replica Studios was a Techstars
+  portfolio company. The company ceased operations on 2025-06-30; the marketing site
+  now shows a farewell page and the api.replicastudios.com host no longer resolves,
+  so this profile is a historical/discovery record captured from public documentation.
 url: https://raw.githubusercontent.com/api-evangelist/replica-studios/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +32,39 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-lifecycle-status: sunset
+x-sunset-date: '2025-06-30'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Voice
+- Text to Speech
+- Speech to Speech
+- AI
+- Audio
+- Voice AI
+- Generative AI
+apis:
+- name: Replica API
+  description: >-
+    Replica API v2 (OpenAPI 3.0.0) — REST API for AI text-to-speech,
+    speech-to-speech, and voice-library operations. Historical; the service was
+    sunset on 2025-06-30.
+  humanURL: https://docs.replicastudios.com/api-reference
+  baseURL: https://api.replicastudios.com
+  tags:
+  - Voice
+  - Text to Speech
+  - Speech to Speech
+  properties:
+  - type: Documentation
+    url: https://docs.replicastudios.com/
+  - type: APIReference
+    url: https://docs.replicastudios.com/api-reference
+  - type: Authentication
+    url: authentication/replica-studios-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -23,3 +73,26 @@ maintainers:
 common:
 - type: Website
   url: https://replicastudios.com/
+- type: DeveloperPortal
+  url: https://docs.replicastudios.com/
+- type: Documentation
+  url: https://docs.replicastudios.com/
+- type: APIReference
+  url: https://docs.replicastudios.com/api-reference
+- type: GettingStarted
+  url: https://docs.replicastudios.com/
+- type: Support
+  url: https://help.replicastudios.com/
+- type: Authentication
+  url: authentication/replica-studios-authentication.yml
+- type: Conventions
+  url: conventions/replica-studios-conventions.yml
+- type: DomainSecurity
+  url: security/replica-studios-domain-security.yml
+- type: LLMsTxt
+  url: llms/replica-studios-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
