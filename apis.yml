@@ -40,6 +40,15 @@ modified: '2026-07-20'
 tags:
 - Company
 - Voice
+- Text-to-Speech
+- Speech to Speech
+- Artificial Intelligence
+- Audio
+- Voice AI
+- Generative AI
+tags_raw:
+- Company
+- Voice
 - Text to Speech
 - Speech to Speech
 - AI
@@ -55,6 +64,10 @@ apis:
   humanURL: https://docs.replicastudios.com/api-reference
   baseURL: https://api.replicastudios.com
   tags:
+  - Voice
+  - Text-to-Speech
+  - Speech to Speech
+  tags_raw:
   - Voice
   - Text to Speech
   - Speech to Speech
