@@ -51,7 +51,7 @@ modified: '2026-07-20'
 tags:
 - Company
 - Voice
-- Text to Speech
+- Text-to-Speech
 - Speech to Speech
 - Artificial Intelligence
 - Audio
@@ -76,7 +76,7 @@ apis:
   baseURL: https://api.replicastudios.com
   tags:
   - Voice
-  - Text to Speech
+  - Text-to-Speech
   - Speech to Speech
   tags_raw:
   - Voice
